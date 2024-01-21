@@ -13,12 +13,33 @@ const chart = new Chart(document.getElementById("token-sale"), {
   },
 });
 
+// TODO: Dark mode code
+// function checkDarkMode() {
+//   if (localStorage.theme === 'dark') {
+//     document.documentElement.classList.add('dark')
+//   } else {
+//     document.documentElement.classList.remove('dark')
+//   }
+// }
+
+// checkDarkMode();
+
+// document.getElementById('btn-switch').addEventListener('click', function () {
+//   if (localStorage.theme === 'dark') {
+//     localStorage.theme = 'light'
+//   } else {
+//     localStorage.theme = 'dark'
+//   }
+//   checkDarkMode();
+// })
+
 document.addEventListener("scroll", function (e) {
-  const tokenList = document.getElementById("token-list");
-  if (isInViewport(tokenList)) {
-    alert('in view port')
+  const brandSection = document.getElementById("brand-section");
+  if (isInViewport(brandSection)) {
+    brandSection.classList.remove('opacity-0');
+    brandSection.classList.add('animate-fade-in');
+    brandSection.classList.add('opacity-1');
   }
-  console.log(isInViewport(tokenList));
 });
 
 function isInViewport(element) {

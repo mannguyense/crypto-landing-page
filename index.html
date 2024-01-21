@@ -18,10 +18,11 @@
                         background: '#080321'
                     },
                     animation: {
-                        'fade-in': 'fadeIn 1s linear'
+                        'fade-in': 'fadeIn 0.5s linear'
                     }
                 }
-            }
+            },
+            darkMode: 'class'
         }
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
@@ -35,8 +36,8 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="bg-background text-white px-8 py-4 ">
-    <header class="flex items-center">
+<body class="bg-background text-white px-8 py-4 pb-32 dark:text-black relative">
+    <header class="flex items-center sticky">
         <img src="./assets/images/logo-white.svg" alt="logo white" class="grow-[2] w-[170px] h-[45px]" />
         <nav class="grow-[3]">
             <ul class="flex gap-10">
@@ -113,7 +114,7 @@
         </div>
         <button class="bg-primary py-2 px-8">Buy Token 47% Off</button>
     </section>
-    <section class="border-t-[1px] border-b-[1px] border-gray-500 text-center pt-10 pb-8 -mx-8" id="brand-section">
+    <section class="opacity-0 border-t-[1px] border-b-[1px] border-gray-500 text-center pt-10 pb-8 -mx-8" id="brand-section">
         <h2 class="font-bold text-2xl mb-10">
             Join the 20,000+ companies using the our platform
         </h2>
@@ -198,8 +199,8 @@
         </div>
     </section>
     <section class="p-14 grid grid-cols-2 gap-4" id="token-list">
-        <div>
-            <canvas height="312px" width="400px" id="token-sale"></canvas>
+        <div class="w-full h-[312px]">
+            <canvas id="token-sale"></canvas>
         </div>
         <div>
             <span class="text-[20px] font-bold text-primary">TOKEN</span>
@@ -224,6 +225,51 @@
                 <div class="flex gap-4 items-center">
                     <div class="w-[24px] h-[24px] bg-skyDark rounded-full"></div>
                     <span>20.93% Gift Code Inventory</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-8">
+        <div class="text-center">
+            <span class="text-primary text-xl font-bold">ROADMAP</span>
+            <h2 class="text-[45px] font-bold">The Timeline</h2>
+            <p class="text-[18px] text-gray-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed congue arcu, In et dignissim quam
+                condimentum vel.
+            </p>
+        </div>
+        <div class="relative grid grid-cols-2 gap-[64px] mt-4">
+            <span class="block w-[2px] bg-gray-300 h-full absolute left-1/2 -translate-x-1/2"></span>
+            <div class="px-[24px] py-[32px] bg-[#131b4d] text-right relative">
+                <div class="w-4 h-4 absolute bg-[#131b4d] top-[40%] rotate-45 -right-2"></div>
+                <div class="rounded-full w-4 h-4 absolute bg-gray-500 top-[40%] rotate-45 -right-[40px]"></div>
+                <h3 class="text-xl mb-3 font-bold text-white">
+                    Feb 25,2020
+                </h3>
+                <p class="text-gray-300 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed congue arcu, In et dignissim quam
+                    condimentum vel
+                </p>
+                <div class="px-3 py-2 bg-white rounded-2xl text-black flex items-center justify-end gap-2 text-sm w-fit float-right">
+                    <img src="./assets/images/bitcoin.svg"/>
+                    <span>Bitcoin</span>
+                    <span>4.5%</span>
+                </div>
+            </div>
+            <div class="opacity-0"></div>
+            <div class="opacity-0"></div>
+            <div class="px-[24px] py-[32px] bg-[#131b4d]">
+                <h3 class="text-xl mb-3 font-bold text-white">
+                    Feb 25,2020
+                </h3>
+                <p class="text-gray-300 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed congue arcu, In et dignissim quam
+                    condimentum vel
+                </p>
+                <div class="px-3 py-2 bg-white rounded-2xl text-black flex items-center justify-end gap-2 text-sm w-fit">
+                    <img src="./assets/images/bitcoin.svg"/>
+                    <span>Bitcoin</span>
+                    <span>4.5%</span>
                 </div>
             </div>
         </div>
