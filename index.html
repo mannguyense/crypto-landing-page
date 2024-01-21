@@ -7,64 +7,73 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            primary: '#3e7dff',
-            secondary: '#2347b9',
-            skyBlue: '#8ba6ff',
-            skyDark: '#8696CA',
-            background: '#080321'
-          }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#3e7dff',
+                        secondary: '#2347b9',
+                        skyBlue: '#8ba6ff',
+                        skyDark: '#8696CA',
+                        background: '#080321'
+                    }
+                }
+            }
         }
-      }
-    }
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+        integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+        integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="bg-background text-white px-8 py-4 ">
     <header class="flex items-center">
-        <img src="./assets/images/logo-white.svg" alt="logo white" class="grow-[2] w-[170px] h-[45px]"/>
+        <img src="./assets/images/logo-white.svg" alt="logo white" class="grow-[2] w-[170px] h-[45px]" />
         <nav class="grow-[3]">
             <ul class="flex gap-10">
                 <li>Home</li>
                 <li class="text-gray-500 hover:text-white">Feature</li>
                 <li class="text-gray-500 hover:text-white">Roadmap</li>
-                <li id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-gray-500 hover:text-white flex gap-1 items-center" type="button">
+                <li id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                    data-dropdown-trigger="hover" class="text-gray-500 hover:text-white flex gap-1 items-center"
+                    type="button">
                     <span>
                         Pages
                     </span>
-                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                    </svg></li>
-                    <div id="dropdownDelay" class="z-10 hidden bg-black rounded-lg shadow w-52 px-4 py-2">
-                        <!-- <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton"> -->
-                          <div>
-                            <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Blog Grid Page</a>
-                          </div>
-                          <div>
-                            <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Blog Details Page</a>
-                          </div>
-                          <div>
-                            <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Token Sale Page</a>
-                          </div>
-                          <div>
-                            <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Support Page</a>
-                          </div>
-                          <div>
-                            <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Sign In Page</a>
-                          </div>
-                          <div>
-                            <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Sign Up Page</a>
-                          </div>
-                        <!-- </ul> -->
+                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </li>
+                <div id="dropdownDelay" class="z-10 hidden bg-black rounded-lg shadow w-52 px-4 py-2">
+                    <!-- <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton"> -->
+                    <div>
+                        <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Blog Grid Page</a>
                     </div>
+                    <div>
+                        <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Blog Details Page</a>
+                    </div>
+                    <div>
+                        <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Token Sale Page</a>
+                    </div>
+                    <div>
+                        <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Support Page</a>
+                    </div>
+                    <div>
+                        <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Sign In Page</a>
+                    </div>
+                    <div>
+                        <a href="#" class="block px-4 py-2 hover:text-primary text-sm">Sign Up Page</a>
+                    </div>
+                    <!-- </ul> -->
+                </div>
                 <li class="text-gray-500 hover:text-white">Support</li>
             </ul>
         </nav>
@@ -75,26 +84,28 @@
             Tailwind CSS Template for Crypto, ICO and Web3
         </h1>
         <p class="text-[18px] font-bold mx-[50px] mb-4">
-            Crypto Currency, Blockchain, ICO, Web3 related website template crafted with Tailwind CSS. Comes with all essential UI components and pages to launch complete website or landing page for anything that related to Crypto, Blockchain and Web3.
+            Crypto Currency, Blockchain, ICO, Web3 related website template crafted with Tailwind CSS. Comes with all
+            essential UI components and pages to launch complete website or landing page for anything that related to
+            Crypto, Blockchain and Web3.
         </p>
         <div class="flex coins justify-center gap-2 mb-8">
             <div>
-                <img src="./assets/images/bitcoin.svg"/>
+                <img src="./assets/images/bitcoin.svg" />
             </div>
             <div>
-                <img src="./assets/images/chainlink.svg"/>
+                <img src="./assets/images/chainlink.svg" />
             </div>
             <div>
-                <img src="./assets/images/coin-1.svg"/>
+                <img src="./assets/images/coin-1.svg" />
             </div>
             <div>
-                <img src="./assets/images/eth.svg"/>
+                <img src="./assets/images/eth.svg" />
             </div>
             <div>
-                <img src="./assets/images/polygon.svg"/>
+                <img src="./assets/images/polygon.svg" />
             </div>
             <div>
-                <img src="./assets/images/trx.svg"/>
+                <img src="./assets/images/trx.svg" />
             </div>
         </div>
         <button class="bg-primary py-2 px-8">Buy Token 47% Off</button>
@@ -104,11 +115,11 @@
             Join the 20,000+ companies using the our platform
         </h2>
         <div class="flex justify-center gap-8 brands">
-            <img src="./assets/images/uideck-white.svg"/>
-            <img src="./assets/images/TailGrids-white.svg"/>
-            <img src="./assets/images/LineIcons-white.svg"/>
-            <img src="./assets/images/AyroUI-white.svg"/>
-            <img src="./assets/images/PlainAdmin-white.svg"/>
+            <img src="./assets/images/uideck-white.svg" />
+            <img src="./assets/images/TailGrids-white.svg" />
+            <img src="./assets/images/LineIcons-white.svg" />
+            <img src="./assets/images/AyroUI-white.svg" />
+            <img src="./assets/images/PlainAdmin-white.svg" />
         </div>
     </section>
     <section class="pt-[120px]">
@@ -116,13 +127,15 @@
             <span class="text-primary font-bold text-xl">CRYPTO FEATURE</span>
             <h2 class="text-[45px] mb-3 font-bold">Best Features</h2>
             <p class="text-gray-300 text-[18px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed congue arcu, In et dignissim quam condimentum vel.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed congue arcu, In et dignissim quam
+                condimentum vel.
             </p>
         </div>
         <div class="grid grid-cols-3 gap-8">
             <div class="feature">
                 <div class="bg-primary w-[80px] h-[80px] rounded-full relative mx-[134px] mb-[28px]">
-                    <img src="./assets/images/shield.svg" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+                    <img src="./assets/images/shield.svg"
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 class="text-center font-bold text-[30px] mb-3">Safe & Secure</h3>
                 <p class="text-center">
@@ -131,7 +144,8 @@
             </div>
             <div class="feature">
                 <div class="bg-primary w-[80px] h-[80px] rounded-full relative mx-[134px] mb-[28px]">
-                    <img src="./assets/images/early-bonus.svg" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+                    <img src="./assets/images/early-bonus.svg"
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 class="text-center font-bold text-[30px] mb-3">Early Bonus</h3>
                 <p class="text-center">
@@ -140,7 +154,8 @@
             </div>
             <div class="feature">
                 <div class="bg-primary w-[80px] h-[80px] rounded-full relative mx-[134px] mb-[28px]">
-                    <img src="./assets/images/universal-access.svg" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+                    <img src="./assets/images/universal-access.svg"
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 class="text-center font-bold text-[30px] mb-3">Universal Access</h3>
                 <p class="text-center">
@@ -149,7 +164,8 @@
             </div>
             <div class="feature">
                 <div class="bg-primary w-[80px] h-[80px] rounded-full relative mx-[134px] mb-[28px]">
-                    <img src="./assets/images/secure-storage.svg" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+                    <img src="./assets/images/secure-storage.svg"
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 class="text-center font-bold text-[30px] mb-3">Secure Storage</h3>
                 <p class="text-center">
@@ -158,7 +174,8 @@
             </div>
             <div class="feature">
                 <div class="bg-primary w-[80px] h-[80px] rounded-full relative mx-[134px] mb-[28px]">
-                    <img src="./assets/images/low-cost.svg" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+                    <img src="./assets/images/low-cost.svg"
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 class="text-center font-bold text-[30px] mb-3">Low Cost</h3>
                 <p class="text-center">
@@ -167,7 +184,8 @@
             </div>
             <div class="feature">
                 <div class="bg-primary w-[80px] h-[80px] rounded-full relative mx-[134px] mb-[28px]">
-                    <img src="./assets/images/several-profit.svg" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+                    <img src="./assets/images/several-profit.svg"
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 class="text-center font-bold text-[30px] mb-3">Several Profit</h3>
                 <p class="text-center">
@@ -184,7 +202,8 @@
             <span class="text-[20px] font-bold text-primary">TOKEN</span>
             <h2 class="mb-3 text-[45px] font-bold">Token Sale</h2>
             <p class="text-[18px] text-gray-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum tellus at lectus pulvinar, id auctor felis iaculis. In vestibulum neque sem, at dapibus justo facilisis in.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum tellus at lectus
+                pulvinar, id auctor felis iaculis. In vestibulum neque sem, at dapibus justo facilisis in.
             </p>
             <div class="text-[18px] text-gray-300 flex flex-col gap-2 mt-8">
                 <div class="flex gap-4 items-center">
@@ -208,4 +227,5 @@
     </section>
 </body>
 <script src="./index.js"></script>
+
 </html>
